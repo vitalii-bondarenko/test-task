@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400&display=swap');
+html, body {
+  font: 400 16px/25px 'Montserrat', sans-serif;
+}
 
-* {
+button, input {
   font-family: 'Montserrat', sans-serif;
 }

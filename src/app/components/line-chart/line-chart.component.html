@@ -1,9 +1,9 @@
 <h2>{{chartData.label}}</h2>
 <div>
   <canvas
-    height="55px"
     *ngIf="lineChartData.length > 0"
     baseChart
+    height="300px"
     [datasets]="lineChartData"
     [labels]="lineChartLabels"
     [options]="lineChartOptions"

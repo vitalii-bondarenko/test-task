@@ -2,7 +2,7 @@
 
   <span
     *ngFor="let path of data"
-    class="path"
+    class="breadcrumb__path"
   >
     <span [routerLink]="path.route">
        {{path.displayName}}
@@ -12,7 +12,7 @@
     </svg>
   </span>
 
-  <span class="currentPath">
+  <span class="breadcrumb__current-path">
     {{currentPage.displayName}}
   </span>
 

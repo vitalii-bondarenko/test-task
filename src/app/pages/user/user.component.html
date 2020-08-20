@@ -6,8 +6,20 @@
 
   <h1>{{fullName}}</h1>
 
-  <app-line-chart *ngIf="userStatistics?.clicksChartData" [chartData]="userStatistics.clicksChartData"></app-line-chart>
+  <div
+    *ngIf="!userStatistics?.clicksChartData || !userStatistics?.viewsChartData"
+    class="loader-wrapper"
+  >
+    <app-loader></app-loader>
+  </div>
 
-  <app-line-chart *ngIf="userStatistics?.viewsChartData" [chartData]="userStatistics.viewsChartData"></app-line-chart>
+  <div class="chart-wrapper">
+    <app-line-chart *ngIf="userStatistics?.clicksChartData"
+                    [chartData]="userStatistics.clicksChartData"></app-line-chart>
+  </div>
+
+  <div class="chart-wrapper">
+    <app-line-chart *ngIf="userStatistics?.viewsChartData" [chartData]="userStatistics.viewsChartData"></app-line-chart>
+  </div>
 
 </app-layout>

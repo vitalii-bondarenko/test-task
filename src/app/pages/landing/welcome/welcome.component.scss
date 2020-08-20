@@ -1,0 +1,108 @@
+@import "./src/assets/styles/colors";
+
+.welcome-bg {
+  background: url(../../../../assets/images/landing/welcome-bg.svg) no-repeat bottom;
+  background-size: cover;
+  min-height: 600px;
+
+  .welcome {
+    display: flex;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+    padding-top: 30px;
+    color: #fff;
+
+
+    .welcome__left {
+
+      @media screen and (max-width: 1199px) {
+        width: calc(100% - 365px);
+      }
+      @media screen and (max-width: 991px) {
+        width: calc(100% - 305px);
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      .welcome__brand-name {
+        font-size: 40px;
+      }
+
+      .welcome__title {
+        margin-top: 48px;
+
+        font-size: 48px;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 41px;
+          margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 991px) {
+          font-size: 35px;
+        }
+
+        span {
+          font-weight: bold;
+        }
+
+      }
+
+
+      .welcome__text {
+        font-size: 20px;
+
+        @media screen and (max-width: 1199px) {
+          font-size: 18px;
+          & br {
+            display: none;
+          }
+        }
+      }
+
+      .welcome__action {
+        margin-top: 32px;
+
+        width: 154px;
+        height: 56px;
+        border-radius: 8px;
+        background: #fff;
+
+        color: $primary;
+
+        &:hover {
+          border: 1px solid #fff;
+          background: #4ca9f5;
+          color: #fff;
+        }
+      }
+
+    }
+
+    .welcome__right {
+      margin-top: 48px;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      .welcome__video {
+
+        @media screen and (max-width: 991px) {
+          width: 305px;
+        }
+        @media screen and (max-width: 767px) {
+          display: block;
+          max-width: 100%;
+          width: auto;
+
+          margin: 0 auto;
+        }
+
+      }
+    }
+  }
+}

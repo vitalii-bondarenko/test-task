@@ -3,8 +3,31 @@ $padding: 20px;
 .wrapper {
   height: 100%;
   width: 100%;
-
-  max-width: calc(1180px + #{$padding} * 2);
   margin: 0 auto;
   padding: 0 $padding;
+}
+
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: calc(1180px + #{$padding} * 2);
+  }
 }

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { UsersService, UserStatistics } from '../../rest/users/users.service';
+import { UsersService } from '../../rest/users.service';
 import { ActivatedRoute } from '@angular/router';
-import { BreadcrumbData } from '../../components/breadcrumb/breadcrumb.component';
+import { UserStatistics } from '../../rest/classes/UserStatistics';
+import { BreadcrumbData } from '../../components/breadcrumb/BreadcumdData';
 
 @Component({
   selector: 'app-user',
@@ -22,7 +23,6 @@ export class UserComponent implements OnInit {
 
   ngOnInit(): void {
     this.initUser();
-
     this.getUserStats();
   }
 

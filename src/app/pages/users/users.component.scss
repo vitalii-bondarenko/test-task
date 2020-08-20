@@ -24,7 +24,7 @@ table {
 
   overflow: hidden;
   border-radius: 10px;
-  width: 100%;
+  width: 1180px;
 
   thead {
     background-color: $primary;
@@ -53,6 +53,10 @@ table {
       td {
         font-size: 16px;
         padding: 0 24px;
+
+        &:nth-of-type(4){
+          word-break: break-word;
+        }
       }
 
       &:nth-child(2n) {

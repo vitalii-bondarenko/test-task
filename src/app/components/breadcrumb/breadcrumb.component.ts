@@ -1,9 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-export interface BreadcrumbData {
-  displayName: string;
-  route?: string;
-}
+import { BreadcrumbData } from './BreadcumdData';
 
 @Component({
   selector: 'app-breadcrumb',
@@ -16,8 +12,6 @@ export class BreadcrumbComponent implements OnInit {
   data: BreadcrumbData[] = [];
 
   currentPage: BreadcrumbData;
-
-  constructor() { }
 
   ngOnInit(): void {
     this.currentPage = this.data.pop();

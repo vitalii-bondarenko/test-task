@@ -1,12 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { BreadcrumbData } from '../../components/breadcrumb/breadcrumb.component';
-import { User, UsersService } from '../../rest/users/users.service';
-
-export class Pagination {
-  page = 1;
-  limit = 16;
-  totalPages: number;
-}
+import { UsersService } from '../../rest/users.service';
+import { User } from '../../rest/classes/User';
+import { BreadcrumbData } from '../../components/breadcrumb/BreadcumdData';
+import { Pagination } from '../../components/pagination/Pagination';
 
 @Component({
   selector: 'app-users',
