@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ChartDataSets, ChartOptions } from 'chart.js';
 import { Color, Label } from 'ng2-charts';
-import { LineChartData } from '../../rest/users.service';
+import { LineChartData } from './LineChartData';
 
 @Component({
   selector: 'app-line-chart',

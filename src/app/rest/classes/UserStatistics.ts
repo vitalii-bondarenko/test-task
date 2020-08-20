@@ -23,7 +23,7 @@ export class UserStatistics {
   getChartByParamName(params: 'page_views' | 'clicks'): LineChartData {
     const chartData = new LineChartData();
 
-    this.daysStatistics.forEach((day, index) => {
+    this.daysStatistics.forEach(day => {
       chartData.labels.push(String(day.date));
       chartData.values.push(day[ params ]);
     });

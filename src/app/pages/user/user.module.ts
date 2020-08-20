@@ -6,7 +6,6 @@ import { LayoutModule } from '../../components/layout/layout.module';
 import { BreadcrumbModule } from '../../components/breadcrumb/breadcrumb.module';
 import { UsersRestModule } from '../../rest/users.rest.module';
 import { LineChartModule } from '../../components/line-chart/line-chart.module';
-import { ChartsModule } from 'ng2-charts';
 import { LoaderModule } from '../../components/loader/loader.module';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { LoaderModule } from '../../components/loader/loader.module';
     UsersRestModule,
     LineChartModule,
     LoaderModule,
-
   ]
 })
 export class UserModule {}
