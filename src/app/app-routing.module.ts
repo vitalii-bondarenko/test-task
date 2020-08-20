@@ -5,7 +5,6 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)
-
   },
   {
     path: 'users',
@@ -14,7 +13,6 @@ const routes: Routes = [
   {
     path: 'user/:id',
     loadChildren: () => import('./pages/user/user.module').then(m => m.UserModule)
-
   }
 ];
 

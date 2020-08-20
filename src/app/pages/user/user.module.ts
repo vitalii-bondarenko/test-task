@@ -3,14 +3,21 @@ import { CommonModule } from '@angular/common';
 import { UserComponent } from './user.component';
 import { UserRoutes } from './user.routes';
 import { LayoutModule } from '../../components/layout/layout.module';
-
+import { BreadcrumbModule } from '../../components/breadcrumb/breadcrumb.module';
+import { UsersRestModule } from '../../rest/users/users.rest.module';
+import { LineChartModule } from '../../components/line-chart/line-chart.module';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [ UserComponent ],
   imports: [
     CommonModule,
     UserRoutes,
-    LayoutModule
+    LayoutModule,
+    BreadcrumbModule,
+    UsersRestModule,
+    LineChartModule,
+
   ]
 })
 export class UserModule {}

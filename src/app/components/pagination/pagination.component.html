@@ -1,0 +1,24 @@
+<ul *ngIf="totalPages > 1" class="pagination">
+  <svg
+    class="left-arrow"
+    [class.inactive]="page === 1"
+    (click)="page !== 1? change(page - 1): null"
+    width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 2L3 14L15 26" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+
+  <li
+    *ngFor="let pageNumber of shownPages"
+    class="pagination__button"
+    (click)="change(pageNumber)"
+    [class.active]="pageNumber == page">
+    {{pageNumber}}
+  </li>
+
+  <svg
+    [class.inactive]="page === totalPages"
+    (click)="page !== totalPages? change(page + 1): null"
+    class="right-arrow" width="17" height="28" viewBox="0 0 17 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15 2L3 14L15 26" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+</ul>

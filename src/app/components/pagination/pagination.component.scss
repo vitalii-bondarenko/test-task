@@ -1,0 +1,50 @@
+@import "./src/assets/styles/colors";
+
+.inactive {
+  stroke: #F1F1F1 !important;
+  cursor: default !important;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 -4px;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 48px;
+    height: 48px;
+
+    border: 2px solid #F1F1F1;
+    border-radius: 8px;
+
+    margin: 0 4px;
+  }
+
+  .active {
+    background-color: $primary;
+    color: white;
+    border: none;
+  }
+
+  .left-arrow {
+    cursor: pointer;
+    stroke: $primary;
+    margin-right: 16px;
+
+  }
+
+  .right-arrow {
+    cursor: pointer;
+    margin-left: 16px;
+    stroke: $primary;
+    transform: rotate(180deg);
+  }
+}

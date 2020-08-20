@@ -1,0 +1,19 @@
+<div class="breadcrumb">
+
+  <span
+    *ngFor="let path of data"
+    class="path"
+  >
+    <span [routerLink]="path.route">
+       {{path.displayName}}
+    </span>
+    <svg width="9" height="11" viewBox="0 0 9 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 10L8 5.5L1 1" stroke="#CCCCCC" stroke-linecap="round"/>
+    </svg>
+  </span>
+
+  <span class="currentPath">
+    {{currentPage.displayName}}
+  </span>
+
+</div>

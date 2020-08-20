@@ -1,0 +1,15 @@
+<h2>{{chartData.label}}</h2>
+<div>
+  <canvas
+    height="55px"
+    *ngIf="lineChartData.length > 0"
+    baseChart
+    [datasets]="lineChartData"
+    [labels]="lineChartLabels"
+    [options]="lineChartOptions"
+    [colors]="lineChartColors"
+    [legend]="false"
+    chartType="line">
+  </canvas>
+</div>
+

@@ -1,3 +1,13 @@
 <app-layout>
-  <p>user works!</p>
+  <app-breadcrumb
+    *ngIf="fullName"
+    [data]="breadcrumbData"
+  ></app-breadcrumb>
+
+  <h1>{{fullName}}</h1>
+
+  <app-line-chart *ngIf="userStatistics?.clicksChartData" [chartData]="userStatistics.clicksChartData"></app-line-chart>
+
+  <app-line-chart *ngIf="userStatistics?.viewsChartData" [chartData]="userStatistics.viewsChartData"></app-line-chart>
+
 </app-layout>

@@ -1,0 +1,81 @@
+@import "./src/assets/styles/colors";
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+h1 {
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.data-table {
+  overflow-x: auto;
+}
+
+table {
+  margin-top: 19px;
+  margin-bottom: 24px;
+
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+
+  thead {
+    background-color: $primary;
+
+    tr {
+      height: 48px;
+
+      td {
+        color: #fff;
+        font-size: 16px;
+        padding: 0 24px;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      height: 32px;
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        background-color: $primary;
+      }
+
+      td {
+        font-size: 16px;
+        padding: 0 24px;
+      }
+
+      &:nth-child(2n) {
+        background-color: #F1F1F1;
+
+        &:hover {
+          color: white;
+          background-color: $primary;
+        }
+      }
+    }
+  }
+
+
+  tr {
+    &:not(:last-child) {
+      border-bottom: 1px solid #fff;
+    }
+
+    & td {
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
+      }
+    }
+  }
+}

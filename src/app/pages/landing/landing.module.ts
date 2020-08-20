@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { LandingRoutes } from './landing.routes';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -9,7 +10,8 @@ import { LandingRoutes } from './landing.routes';
   declarations: [LandingComponent],
   imports: [
     CommonModule,
-    LandingRoutes
+    LandingRoutes,
+    FormsModule
   ]
 })
 export class LandingModule { }
